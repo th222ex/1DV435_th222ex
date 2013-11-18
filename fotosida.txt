@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+	<meta charset="utf-8"/>
+    <title> T's Fotostudio </title> 
+</head>
+
+<body>
+	<div id="header">
+		<h2>T's Fotostudio</h2>
+    </div>
+ 	<div id="navigation"> 
+    	<dl> 
+        	<dt><h4>Mina resor</h4></dt>
+     		<dt>Kreta</dt>
+            <dt>Gran Canaria</dt>
+            <dt>Korfu</dt>
+            <dt>Azorerna</dt>
+            <dt>Madeira</dt>
+            <dt>Mexico</dt>
+            <dt>Mallorca</dt>
+            <h4>Malmö</h4>
+            <h4>Sverige</h4>
+            <h4>Övrigt</h4>
+			</dl>
+	</div>
+	<div id="quote">
+    	<h2>
+        	<em>
+    She's mad but she'd magic. There's no lie in her fire. - Charles Bukowski. 
+			</em>
+     	</h2>
+	</div>
+	<div id="
+</body>
+</html>
