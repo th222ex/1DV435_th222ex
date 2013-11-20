@@ -5,11 +5,38 @@
 <title>Kontakt</title>
 </head>
 
-<body>
+	<body>
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+        <div id="navigation">
+                 <ul> 
+                    <li><a href="../index.html">start</a></li>
+                    <li><a href="laborationer.html">laborationer</a></li>
+                    <li><a href="presentation.html">presentation</a></li>
+                    <li><a href="kontakt.html">kontakt</a></li>
+           		 </ul>
+        </div>
+
+  <fieldset>
+    	<legend>Fråga</legend>
+        <label for="cause">Ärendetyp:</label>
+        	<select id="meny">
+        		<option value="Fråga" selected>Fråga</option>
+	            <option value="Förslag">Förslag</option>
+    	        <option value="Klagomål">Klagomål</option>
+        	</select>    
+        <label for="head">Rubrik:</label><input type"text" />
+       	<textarea rows="7" cols="100">Skriv din fråga här...</textarea>
+    </fieldset>
+    <fieldset>
+    	<legend>Information om dig</legend>
+        <label for="Kontakta mig via mail">Kontakta mig via mail</label> 
+        <input type="checkbox" name="group 1" value="Kontakta mig via mail"/>
+        
+        <label for="Kontakta mig via mail">Kontakta mig via telefon</label> 
+        <input type="checkbox" name="group 1" value="Kontakta mig via mail"/>
+   	</fieldset>
+    
+        <input type="submit" value="Skicka frågan"/>
 	
-</body>
+	</body>
 </html>
