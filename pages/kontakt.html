@@ -22,26 +22,27 @@
   <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
 	  <fieldset>
 			<legend>Fråga</legend>
-			<label for="cause">Ärendetyp:</label>
-				<select name="Typ av fråga">
+			<label for="request">Ärendetyp:</label>
+				<select name="request" id="request">
 					<option value="Fråga" selected>Fråga</option>
 					<option value="Förslag">Förslag</option>
 					<option value="Klagomål">Klagomål</option>
 				</select>
 			<br>    
-			<label for="head">Rubrik:</label><input type="text" id="rubrik" name="rubrik" size="30"/>
+			<label for="rubrik">Rubrik:</label>
+            <input type="text" id="rubrik" name="rubrik" size="30"/>
 			<br>
 			<label for="fråga">Fråga:</label>
 			<br>
-			<textarea name="fråga" textarea rows="3" cols="30" placeholder="Skriv din fråga här..."></textarea>
+			<textarea id="fråga" rows="3" cols="30" placeholder="Skriv din fråga här..."></textarea>
 		</fieldset>
 		<fieldset>
 			<legend>Information om dig</legend>
-			<label for="Kontakta mig via mail">Kontakta mig via mail</label> 
-			<input type="checkbox" name="Mail" value="Kontakta mig via mail"/>
+			<label for="mail">Kontakta mig via mail</label> 
+			<input id="mail" type="checkbox" name="Mail" value="Kontakta mig via mail"/>
 			<br>
-			<label for="Kontakta mig via telefon">Kontakta mig via telefon</label> 
-			<input type="checkbox" name="telefon" value="Kontakta mig via telefon"/>
+			<label for="telefon">Kontakta mig via telefon</label> 
+			<input id="telefon" type="checkbox" name="telefon" value="Kontakta mig via telefon"/>
 		</fieldset>
 	
     
