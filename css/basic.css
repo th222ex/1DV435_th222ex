@@ -1,0 +1,198 @@
+/*Frågor till Emil: Hur man centrerar texten i menyn?*/
+
+/*Start*/
+body {
+
+background-color: #FFCCCC;
+}
+
+h3 {
+text-align: left;
+color: #7D3636;
+}
+
+p {
+color: black;
+font-family:Georgia, "Times New Roman", Times, serif
+
+}
+
+a {
+color: #7D3636;
+font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+li {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size: 16px;
+}
+
+dl {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size: 16px;
+}
+
+.logga {
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+/*Slut på Body*/
+
+/*Själva grunden på sidan*/
+#container {
+overflow: auto;
+width: 960px;
+background-color: #FEFEFE;
+margin: auto;
+border-radius: 25px;
+border: 5px solid #CC9999;
+}
+
+/*Menyn, för att ta bort understreck*/
+#navigation ul {
+list-style: none;
+}
+
+/*Menyn*/
+#navigation a {
+text-decoration: none;
+display: block;
+background-color: #CC9999;
+width: 120px;
+height: 30px;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-style:oblique;
+margin: 5px 0;
+text-align: center;
+border-radius: 5px;
+box-shadow: 5px 5px 2px #848484;
+padding-top: 5px;
+}
+
+/*Markerad länk i menyn*/
+#navigation a:hover {
+background-color: #848484;
+}
+
+/*Aktiv länk i menyn*/
+#navigation .active {
+background-color: #7D3636;
+color: black
+}
+
+/*För att få texten vid sidan om menyn*/
+#navigation {
+vertical-align: middle;
+float: left;
+}
+
+/*Centrerade boxen*/
+#index {
+width: 600px;
+margin: auto;
+margin-top: 20px;
+margin-bottom: 30px;
+font-size: 20px;
+}
+
+/*Blogginlägg på startsidan*/
+.blogpost {
+border: 5px solid #CC9999;
+width: 500px;
+margin: auto;
+margin-top: 20px;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 10px 10px 5px #848484;
+color: #7D3636;
+margin-bottom: 20px;
+}
+
+/*Blomma på bloggsidan*/
+img.blomma {
+margin-left: auto;
+margin-right: auto;
+display: block;
+border: 2px solid #000099;
+}
+
+/*Formulär på kontaktsidan*/
+#form {
+width: 400px;
+margin: auto;
+margin-bottom: 15px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size: 12px;
+}
+
+/*Innehåll på presentationen*/
+#content {
+width: 600px;
+margin-left: 200px;
+margin-bottom: 15px;
+border: 3px solid #848484;
+padding-left: 15px;
+box-shadow: 10px 10px 5px #848484;
+border-radius: 5px;
+}
+
+/*Innehåll i content-boxen*/
+#intro {
+border: 5px solid #CC9999;
+width: 500px;
+border-radius: 5px;
+box-shadow: 10px 10px 5px #848484;
+color: #7D3636;
+margin: auto;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+box-shadow: 10px 10px 5px #848484;
+overflow: auto;
+padding-bottom: 20px;
+
+}
+
+/*Tabellen centreras*/
+table.center {
+font-family: Georgia, "Times New Roman", Times, serif;
+margin-left: auto;
+margin-right: auto;
+font-size: 16px;
+}
+
+/*Ändra utseende på tabellen*/
+.table th, tr {
+border: 2px solid #CC9999;
+}
+
+/*Profilbilden på presentationssidan*/
+#profil {
+float: left;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+/*Text i intro div-taggen*/
+#text {
+padding: 50px 15px;
+}
+
+/*Intressen, osv.*/
+#ommig {
+margin-top: 40px;
+}
+
+/*Footer längst ner på sidan*/
+#footer {
+width: 100%;
+text-align: center;
+font-size: 10px;
+font-style: italic;
+font-family: Georgia, "Times New Roman", Times, serif;
+}
+

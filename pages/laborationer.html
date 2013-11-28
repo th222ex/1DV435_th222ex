@@ -1,101 +1,113 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-
-
-<meta charset="utf-8"/>
-
-<title>Min Laborationsportal</title>
+<head>    
+    <meta charset="utf-8"/>    
+    <title>Min Laborationsportal</title>
+    <link rel="stylesheet" type="text/css" href="../css/basic.css" />
 </head>
 
 	<body>
-		<div id="logo">
-			<img src="../pics/logotyp.png" alt="Logotyp" class="logga" />
-		</div>
-    	<ul> 
-            <li><a href="../index.html">start</a></li>
-            <li><a href="laborationer.html">laborationer</a></li>
-            <li><a href="presentation.html">presentation</a></li>
-            <li><a href="kontakt.html">kontakt</a></li>
-        </ul>
-    
-        <h1>Min Laborationsportal</h1>
-    
-        <p>Therese's Kurssida</p>
+    	<div id="container">
+            <div id="logo">
+                <img src="../pics/logotyp.png" alt="Logotyp" class="logga" />
+            </div>
+            
+            <div id="navigation">
+                <ul> 
+                    <li><a href="../index.html">Start</a></li>
+                    <li><a class="active" href="laborationer.html">Laborationer</a></li>
+                    <li><a href="presentation.html">Presentation</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+         	</div>
+        <div id="content">
         
-        <h2>Webbteknisk introduktion</h2>
-        <ul>
-            <li><a href="#laboration1">Laboration 1</a></li>
-            <li><a href="#laboration2">Laboration 2</a></li>
-        </ul>
-		<h2>Resultat</h2>
-
-        <table border="1">
-            <thead>
-                <tr> 
-                    <th>Laboration</th>
-                    <th>Uppgift</th>
-                    <th>Status</th>
-                    <th>Redovisad</th>
-                </tr>
-            </thead> 
-            <tfoot>
-                <tr>
-                    <td colspan="4">Laborationsresultat för Therese Hågerup</td>	
-                </tr>
-            </tfoot>  
-            <tbody>       
-                <tr>
-                    <td rowspan="3">1</td>
-                    <td>1</td><td>Arbetar</td><td>2013-10-..</td></tr>
-                <tr>
-                    <td>2</td><td>Arbetar</td><td>2013-10-..</td></tr>
-                <tr>
-                    <td>3</td><td>Arbetar</td><td>2013-10-..</tr> 
-            </tbody>
-            <tbody>
-                <tr>
-                    <td rowspan="6">2</td>
-                    <td>1</td><td>Arbetar</td><td>2013-10-..</td></tr>
-                    <tr><td>2</td><td>Arbetar</td><td>2013-10-..</td></tr>
-                    <tr><td>3</td><td>Arbetar</td><td>2013-10-..</td></tr>
-                    <tr><td>4</td><td>Arbetar</td><td>2013-10-..</td></tr>
-                    <tr><td>5</td><td>Arbetar</td><td>2013-10-..</td></tr>
-                    <tr><td>6</td><td>Arbetar</td><td>2013-10-..</td></tr>
-            </tbody>
+            <h3>Min Laborationsportal</h3>
+        
+            <p>Therese's Kurssida</p>
+            
+            <h3>Webbteknisk introduktion</h3>
+            <ul>
+                <li><a href="#laboration1">Laboration 1</a></li>
+                <li><a href="#laboration2">Laboration 2</a></li>
+            </ul>
+            <h3>Resultat</h3>
+				<div class="table">
+				<table class="center" border="1">
+					<thead>
+						<tr> 
+							<th>Laboration</th>
+							<th>Uppgift</th>
+							<th>Status</th>
+							<th>Redovisad</th>
+						</tr>
+					</thead> 
+					<tfoot>
+						<tr>
+							<td colspan="4">Laborationsresultat för Therese Hågerup</td>	
+						</tr>
+					</tfoot>  
+					<tbody>       
+						<tr>
+							<td rowspan="3">1</td>
+							<td>1</td><td>Arbetar</td><td>2013-10-..</td></tr>
+						<tr>
+							<td>2</td><td>Arbetar</td><td>2013-10-..</td></tr>
+						<tr>
+							<td>3</td><td>Arbetar</td><td>2013-10-..</tr> 
+					</tbody>
+					<tbody>
+						<tr>
+							<td rowspan="6">2</td>
+							<td>1</td><td>Arbetar</td><td>2013-10-..</td></tr>
+							<tr><td>2</td><td>Arbetar</td><td>2013-10-..</td></tr>
+							<tr><td>3</td><td>Arbetar</td><td>2013-10-..</td></tr>
+							<tr><td>4</td><td>Arbetar</td><td>2013-10-..</td></tr>
+							<tr><td>5</td><td>Arbetar</td><td>2013-10-..</td></tr>
+							<tr><td>6</td><td>Arbetar</td><td>2013-10-..</td></tr>
+					</tbody>
+				</table>    
+			</div>
+            <h3 id="laboration1">Laboration 1</h3>
+            <p>Uppgifter</p>
+            <ol>
+                <li>www.katalog. Check</li>
+                <li>Ett första dokument. Check</li>
+            </ol>
+            <h3 id="laboration2">Laboration 2</h3>
+            <p>Uppgifter</p>
+            <ol>
+                <li>Absoluta och relativa sökvägar
+                    <dl>
+                        <dt>Absoluta sökvägen till bottom.html</dt>
+                            <dd>www.server.se/html/pages/bottom.html</dd>
+                        <dt>Vilken är den relativa sökvägen från filen default.html till filen top.html?</dt>
+                            <dd>/pages/top.html</dd>
+                        <dt>Vilken är den relativa sökvägen från filen bottom.html till filen index.html?</dt>
+                            <dd>../../index.html</dd>
+                        <dt>Vilken är den absoluta sökvägen till filen index.html?</dt>
+                            <dd>www.server.se/index.html</dd>
+                        <dt>Vilken är den relativa sökvägen från filen top.html till bottom.html?</dt>
+                            <dd>bottom.html</dd>
+                        <dt>Vilken är den relativa sökvägen från filen index.html till top.html?</dt>
+                            <dd>index.html/html/pages/top.html</dd>
+                    </dl></li>
+                <li>Länkar och listor</li>
+				<p> Se presentation </p>
+                <li>Bilder:
+                    <dl>
+                        <dt><a href="presentation.html#profil">Min profilbild</a></dt>
+                        <dt><a href="../pics/logotyp.png">Logotyp</a></dt>
+                    </dl>
+              	</li>
+                <li>Video</li>     
+				<p> Ingen video</p>
+            </ol>
+        	</div>
+			<div id="footer">
+            	<p>Denna sida har skapats av Therese Hågerup HT13</p>
+        	</div>
+    	</div> 
               
-        </table>    
-        <h3>Laboration 1</h3>
-        <p>Uppgifter</p>
-        <ol>
-            <li>www.katalog. Check</li>
-            <li>Ett första dokument</li>
-        </ol>
-        <h3>Laboration 2</h3>
-        <p>Uppgifter</p>
-        <ol>
-        	<li>Absoluta och relativa sökvägar
-            	<dl>
-					<dt>Absoluta sökvägen till bottom.html</dt>
-						<dd>www.server.se/html/pages/bottom.html</dd>
-					<dt>Vilken är den relativa sökvägen från filen default.html till filen top.html?</dt>
-						<dd>/pages/top.html</dd>
-					<dt>Vilken är den relativa sökvägen från filen bottom.html till filen index.html?</dt>
-						<dd>../../index.html</dd>
-					<dt>Vilken är den absoluta sökvägen till filen index.html?</dt>
-						<dd>www.server.se/index.html</dd>
-					<dt>Vilken är den relativa sökvägen från filen top.html till bottom.html?</dt>
-						<dd>bottom.html</dd>
-					<dt>Vilken är den relativa sökvägen från filen index.html till top.html?</dt>
-						<dd>index.html/html/pages/top.html</dd>
-				</dl></li>
-            <li>Länkar och listor</li>
-            <li>Bilder:
-				<dl>
-					<dt><a href="presentation.html#profil">Min profilbild</a></dt>
-					<dt><a href="../pics/logotyp.png">Logotyp</a></dt>
-				</dl></li>
-            <li>Video</li>        
-       	</ol>
-	></body>
+	</body>
 </html>
