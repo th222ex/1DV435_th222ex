@@ -24,6 +24,7 @@ function test2() {
 	var tal1 = 2.5
 	var tal2 = 8
 	
+	//tal1*tal2 ger resultatet
 	var resultat = tal1 * tal2
 	
 	return resultat;
@@ -40,6 +41,7 @@ function test2() {
 function test3(tal1, tal2) {
 	console.log(tal1,tal2)
 	
+	//tal1 - tal2 ger resultatet
 	var resultat = tal1 - tal2
 	
 	return resultat;
@@ -68,6 +70,7 @@ function test4(tal) {
 // returnera längden på variablen text som kommer in som parameter. Variablen är av datatypen string
 function test5(text) {
 	
+	//returnerar längden på textremsan
 	return text.length
 	
 	
@@ -81,6 +84,7 @@ function test5(text) {
 // Returnera den näst sista bokstaven i textsträngen som kommer in i parametern text
 function test6(text) {
 	
+	//räknar ut den näst sista bokstaven i texten. 
 	var text2 = text.charAt(text.length-2)
 
 	return text2 
@@ -98,8 +102,7 @@ function test6(text) {
 function test7(firstname, surname) {
 	var space = ", ";
 	var fullname = surname+space+firstname;
-	console.log(fullname);
-	
+	console.log(fullname);	
 	return fullname
 	
 	// eller så kan man skriva return surname + ", " + firstname
@@ -117,8 +120,11 @@ function test7(firstname, surname) {
 //(se länktips i handledningen)
 function test8(words) {
 	
-	// Din kod skrivs här
+	return words.substr(words.indexOf(' ')+1);
+	//skriver ut texten ifrån första mellanslaget + 1
+
 }
+
 
 /*
 * TEST 9
@@ -126,8 +132,22 @@ function test8(words) {
 // Om numret i parametern number är större eller lika med 100 ska en boolean true returneras
 // annars ska en boolean false resturneras
 function test9(number) {
+	//variablen får värdet Boolean
+	var myBoolean = Boolean ( false );
 	
-	// Din kod skrivs här
+	if (number >= 100) { 
+	myBoolean=true;
+	}
+	//om värdet är större eller lika med 100 är det sant
+	
+	else { 
+	myBoolean=false; 
+	}
+	//annars är det falskt
+		
+	return myBoolean;
+	
+	
 }
 
 /*
@@ -141,7 +161,21 @@ function test9(number) {
 
 function test10(epost, namn) {
 	
-	// Din kod skrivs här
+	//om epost är mindre än 1, ska nedan text visas
+	if(epost.length<1||namn.length<1) { 
+		return "Du har glömt att ange namn eller e-post";
+	}
+	
+	//om epost innnehåller @ ska nedan text visas 	
+	else if(epost.indexOf("@") >= 0) {
+		return "Ditt meddelande skickas";
+	}
+	
+	//annars ska nedan visas
+	else {
+		return "Ange en e-postadress";
+	}
+
 }
 
 /*
@@ -154,7 +188,19 @@ function test10(epost, namn) {
 //(se länktips i handledningen)
 function test11(arr) {
 	
-	// Din kod skrivs här
+	var length = arr.length;
+	console.log(arr);
+	
+	//räknar ut längden / 2
+	var middle = length/2;
+	//avrundar halva längden uppåt
+	var middleround = Math.round(middle);
+	console.log(middleround);
+	//ger resultat på avrundningen - 1 (för att första värdet är noll)
+	var realmiddle = middleround-1;
+	console.log(arr[realmiddle]);
+	//lådan (arrayen) innehåller realmiddle
+	return arr[realmiddle];
 }
 
 
@@ -167,8 +213,18 @@ function test11(arr) {
 // Använd en for-loop för att lösa problemet
 function test12(arr) {
 	
-	// Din kod skrivs här
+	var i = 0;
 	
+	var length = arr.length;
+	//summan är noll, efter varje loop plussas (++) ett på summan(+1)
+	var summa = 0;
+	for(i;i<length;i++) {
+		summa +=arr[i];
+	}
+	//medelvärdet är summan/längden
+	var medel = summa/length;
+	//returnerar medelvärdet
+	return medel;
 }
 
 
