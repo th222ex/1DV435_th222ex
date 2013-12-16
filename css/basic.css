@@ -193,6 +193,13 @@ padding-bottom: 20px;
 
 }
 
+#labbtable {
+margin-left: auto;
+margin-right: auto;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size:12px;
+}
+
 /*Tabellen centreras*/
 table.center {
 font-family: Georgia, "Times New Roman", Times, serif;
@@ -233,6 +240,11 @@ font-size: 10px;
 font-style: italic;
 font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+/*Tabell Laborationer, show/hide*/
+
+.hidden { display: none; }
+.unhidden { display: block; }
 
 @media print {
 

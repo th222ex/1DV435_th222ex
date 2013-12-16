@@ -32,44 +32,44 @@
                 <li><a href="#laboration2">Laboration 2</a></li>
             </ul>
             <h3>Resultat</h3>
-            	<a id="loginLink" onclick="toggleTable(true);" href="#">Dölj/Visa Tabell</a>
-				<div class="table">
-				<table class="center" border="1">
-                <table id="loginTable" border="1" align="center" style="display:none">
-					<thead>
-						<tr> 
-							<th>Laboration</th>
-							<th>Uppgift</th>
-							<th>Status</th>
-							<th>Redovisad</th>
-						</tr>
-					</thead> 
-					<tfoot>
-						<tr>
-							<td colspan="4">Laborationsresultat för Therese Hågerup</td>	
-						</tr>
-					</tfoot>  
-					<tbody>       
-						<tr>
-							<td rowspan="3">1</td>
-							<td>1</td><td>Arbetar</td><td>2013-10-..</td></tr>
-						<tr>
-							<td>2</td><td>Arbetar</td><td>2013-10-..</td></tr>
-						<tr>
-							<td>3</td><td>Arbetar</td><td>2013-10-..</tr> 
-					</tbody>
-					<tbody>
-						<tr>
-							<td rowspan="6">2</td>
-							<td>1</td><td>Arbetar</td><td>2013-10-..</td></tr>
-							<tr><td>2</td><td>Arbetar</td><td>2013-10-..</td></tr>
-							<tr><td>3</td><td>Arbetar</td><td>2013-10-..</td></tr>
-							<tr><td>4</td><td>Arbetar</td><td>2013-10-..</td></tr>
-							<tr><td>5</td><td>Arbetar</td><td>2013-10-..</td></tr>
-							<tr><td>6</td><td>Arbetar</td><td>2013-10-..</td></tr>
-					</tbody>
-				</table>    
-			</div>
+            	<a href="#" onclick="unhide()">Visa/Dölj tabell</a>
+                    <div id="tablehide" class="hidden">
+                    
+                    <table id="labbtable" border="1">
+                        <thead>
+                            <tr> 
+                                <th>Laboration</th>
+                                <th>Uppgift</th>
+                                <th>Status</th>
+                                <th>Redovisad</th>
+                            </tr>
+                        </thead> 
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Laborationsresultat för Therese Hågerup</td>	
+                            </tr>
+                        </tfoot>  
+                        <tbody>       
+                            <tr>
+                                <td rowspan="3">1</td>
+                                <td>1</td><td>Arbetar</td><td>2013-10-..</td></tr>
+                            <tr>
+                                <td>2</td><td>Arbetar</td><td>2013-10-..</td></tr>
+                            <tr>
+                                <td>3</td><td>Arbetar</td><td>2013-10-..</tr> 
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td rowspan="6">2</td>
+                                <td>1</td><td>Arbetar</td><td>2013-10-..</td></tr>
+                                <tr><td>2</td><td>Arbetar</td><td>2013-10-..</td></tr>
+                                <tr><td>3</td><td>Arbetar</td><td>2013-10-..</td></tr>
+                                <tr><td>4</td><td>Arbetar</td><td>2013-10-..</td></tr>
+                                <tr><td>5</td><td>Arbetar</td><td>2013-10-..</td></tr>
+                                <tr><td>6</td><td>Arbetar</td><td>2013-10-..</td></tr>
+                        </tbody>
+                    </table>    
+				</div>		
             <h3 id="laboration1">Laboration 1</h3>
             <p>Uppgifter</p>
             <ol>
@@ -107,9 +107,9 @@
             </ol>
         	</div>
 			<div id="footer">
-            	<p>Denna sida har skapats av Therese Hågerup HT13</p>
+            	<p>´Denna sida har skapats av Therese Hågerup HT13</p>
         	</div>
     	</div> 
-              
+    <script type="text/javascript" src="../javascript/toggle.js"></script>
 	</body>
 </html>

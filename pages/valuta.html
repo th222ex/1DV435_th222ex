@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+	
+    <meta charset="utf-8"/>
+   	<link rel="stylesheet" type="text/css" href="css/basic.css" />
+    <title>Therese's kurssida</title>
+    
+</head>
+
+	<body>
+	
+        <label>Amount:</label>
+        <input type="text" id="amount" />
+        <label>From:</label>
+        <select id="select1">
+            <option value="pound">&pound; Pound</option>
+            <option value="real">R$ Real</option>
+        </select>
+        <label>To:</label>
+        <select id="select2">
+            <option value="pound">&pound; Pound</option>
+            <option value="real">R$ Real</option>
+        </select>
+        <input type="button" onClick="calculation()" value="calculate" />
+        <div id="result"></div>    
+        
+</body>
+</html>
