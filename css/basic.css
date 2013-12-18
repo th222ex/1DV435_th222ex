@@ -134,6 +134,10 @@ margin-bottom: 30px;
 font-size: 20px;
 }
 
+#index p {
+font-size:18px;
+}
+
 /*Blogginlägg på startsidan*/
 .blogpost {
 border: 5px solid #CC9999;
@@ -239,12 +243,97 @@ text-align: center;
 font-size: 10px;
 font-style: italic;
 font-family: Georgia, "Times New Roman", Times, serif;
+margin-left: 25px;
 }
 
 /*Tabell Laborationer, show/hide*/
 
 .hidden { display: none; }
 .unhidden { display: block; }
+
+/*Valutaomvandlare*/
+#theForm {
+width: 400px;
+margin: auto;
+margin-bottom: 200px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size: 16px;
+}
+
+#theForm a {
+text-decoration: none;
+display: block;
+background-color: #CC9999;
+width: 120px;
+height: 30px;
+float:right;
+text-align:center;
+border-radius: 5px;
+box-shadow: 5px 5px 2px #848484;
+padding-top: 9px;
+margin-right: 50px;
+}
+
+#valutatext {
+padding-left: 20px;
+margin-left: 30px;
+height: 35px;
+
+}
+
+#theForm a:hover {
+background-color: #848484;
+}
+
+#valutaomv {
+background-image: url("pics/rosa1.png");
+border: 5px solid #CC9999;
+width: 500px;
+margin: auto;
+margin-top: 20px;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 10px 10px 5px #848484;
+color: #7D3636;
+margin-bottom: 20px;
+}
+
+/*Bildspel*/
+#change {
+display:block;
+width: 500px;
+height: auto;
+margin-left:auto;
+margin-right:auto;
+margin-top:30px;
+}
+
+#bildspel {
+background-image: url("pics/rosa1.png");
+border: 5px solid #CC9999;
+width: 600px;
+height: 600px;
+margin-left: 200px;
+margin-top: 20px;
+padding: 10px;
+border-radius: 5px; 
+box-shadow: 10px 10px 5px #848484;
+color: #7D3636;
+margin-bottom: 20px;
+}
+
+#bildspelsintro {
+background-image: url("pics/rosa1.png");
+border: 5px solid #CC9999;
+width: 600px;
+height: 100px;
+border-radius: 5px;
+box-shadow: 10px 10px 5px #848484;
+color: #7D3636;
+margin-left: 200px;
+padding-left: 18px;
+}
+
 
 @media print {
 

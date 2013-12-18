@@ -4,27 +4,39 @@
 <head>
 	
     <meta charset="utf-8"/>
-   	<link rel="stylesheet" type="text/css" href="css/basic.css" />
+   	<link rel="stylesheet" type="text/css" href="../css/basic.css" />
     <title>Therese's kurssida</title>
     
 </head>
 
 	<body>
-	
-        <label>Amount:</label>
-        <input type="text" id="amount" />
-        <label>From:</label>
-        <select id="select1">
-            <option value="pound">&pound; Pound</option>
-            <option value="real">R$ Real</option>
-        </select>
-        <label>To:</label>
-        <select id="select2">
-            <option value="pound">&pound; Pound</option>
-            <option value="real">R$ Real</option>
-        </select>
-        <input type="button" onClick="calculation()" value="calculate" />
-        <div id="result"></div>    
+        <div id="container">
+        <div id="logo">
+            <img src="../pics/logotyp.png" alt="Logotyp" class="logga" />
+        </div>
+        <div id="navigation">
+                 <ul> 
+                    <li><a href="../index.html" id="home">Start</a></li>
+                    <li><a href="laborationer.html" id="lab">Laborationer</a></li>
+                    <li><a href="presentation.html" id="pres">Presentation</a></li>
+                    <li><a href="kontakt.html" id="con">Kontakt</a></li>
+                 </ul>
+        </div>
+    	<div id="valutaomv">
         
+        <h3>Valutaomvandlare</h3>
+        <p>Här kan du omvandla svenska kronor till Euro och Dollar. Have fun!</p>
+            <form id="theForm">
+                <input type="text" id="valutatext" /> <a href="#">Beräkna</a>
+           		</br> 
+                </br>
+                <p class="textarea"></p>
+            </form>
+     	</div>
+
+ <script type="text/javascript" src="../javascript/valuta.js"></script>            
+	<div id="footer">
+            	<p>Denna sida har skapats av Therese Hågerup HT13</p>
+  	</div>
 </body>
 </html>
